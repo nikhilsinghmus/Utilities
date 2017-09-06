@@ -258,8 +258,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 210.0, 142.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "Nikhil"
+					"style" : ""
 				}
 
 			}
@@ -301,9 +300,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 296.0, 128.0, 43.0, 22.0 ],
+					"patching_rect" : [ 296.0, 128.0, 205.0, 22.0 ],
 					"style" : "",
-					"text" : "dialog"
+					"text" : "dialog \"Type in your nickname here.\""
 				}
 
 			}

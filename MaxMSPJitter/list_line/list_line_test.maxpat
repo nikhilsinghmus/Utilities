@@ -63,7 +63,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.0, 45.0, 448.0, 171.0 ],
 					"style" : "",
-					"text" : "A simple utility that interpolates in time between two lists of values. Similar functionality to line, but for lists of numbers.\n\nInput is in the format:\n[a b c, x y z T]\n\nWhere [a b c] and [x y z] are two lists of numbers and T is the ramp time in milliseconds.\n\nNikhil Singh 2017",
+					"text" : "A simple utility that interpolates in time between two lists of values. Similar functionality to line, but for lists of numbers.\n\nInput is in the format:\n[a b c, x y z T]\n\nWhere [a b c] and [x y z] are two lists of numbers and T is the ramp time in milliseconds.\n\n2017",
 					"textjustification" : 1
 				}
 
@@ -235,7 +235,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "list_line.maxpat",
-				"bootpath" : "~/Desktop/Utilities/MaxMSPJitter/list_line",
+				"bootpath" : "~/Utilities/MaxMSPJitter/list_line",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -63,7 +63,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 262.0, 45.0, 448.0, 51.0 ],
 					"style" : "",
-					"text" : "A simple utility to parse CSV (comma-separated value) files.\n\nNikhil Singh 2017",
+					"text" : "A simple utility to parse CSV (comma-separated value) files.\n\n2017",
 					"textjustification" : 1
 				}
 
@@ -237,7 +237,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "csv_parse.maxpat",
-				"bootpath" : "~/Desktop/Utilities/MaxMSPJitter/csv_parse",
+				"bootpath" : "~/Utilities/MaxMSPJitter/csv_parse",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
