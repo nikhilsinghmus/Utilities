@@ -89,7 +89,7 @@ function get_offsets(s) {
 				}
 			}
 		}
-	} else if((s[0] === "m" || s[0] === "-") && s.substring(1, 5) !== "maj") {
+	} else if((s[0] === "m" || s[0] === "-") && s.substring(0, 3) !== "maj") {
 
 		switch(s[1]) {
 			case "7": offsets.push(10); break;
@@ -104,21 +104,21 @@ function get_offsets(s) {
 			offsets.push(0, 3, 7);
 		}
 
-		if(s.substring(1, 5) === "maj" || s.substring(1, 5) === "Maj") {
-			switch(s[5]) {
-				case "7": offsets.push(11);
-				case "9": offsets.push(11, 2);
+		if(s.substring(1, 4) === "maj" || s.substring(1, 4) === "Maj") {
+			switch(s[4]) {
+				case "7": offsets.push(11); break;
+				case "9": offsets.push(11, 2); break;
 				default: break;
 			}
-		} else if(s.substring(1, 5) === "") {
-
 		}
-	} else if(s[0] === "M" || s.substring(0, 4) === "maj" || s.substring(0, 4) === "Maj") {
-		switch(s[4]) {
-			case "7": offsets.push(11);
-			case "9": offsets.push(11, 2);
-			default: break;
-		}
+		
+	} else if(s[0] === "M" || s.substring(0, 3) === "maj" || s.substring(0, 3) === "Maj") {
+		
+		if(s[1] == "7" || s[3] == "7") {
+			offsets.push(11);
+		} else if(s[1] == "9" || s[3] == "9") {
+			offsets.push(11, 2);
+		}	
 
 		if(s.indexOf("#5") !== -1) {
 			offsets.push(0, 4, 8);
@@ -126,21 +126,19 @@ function get_offsets(s) {
 			offsets.push(0, 4, 7);
 		}
 
-	} else if(s[0] === "º" || s[0] === "o" || s[0] === "d" || s.substring(0, 4) === "dim") {
+	} else if(s[0] === "º" || s[0] === "o" || s[0] === "d" || s.substring(0, 3) === "dim") {
 		offsets.push(0, 3, 6);
 
-		if(s[5] === "7") {
+		if(s[1] == "7" || s[3] == "7") {
 			offsets.push(9);
 		}
-	} else if(s[0] === "+" || s[0] === "a" || s.substring(0, 4) === "aug") {
+	} else if(s[0] === "+" || s[0] === "a" || s.substring(0, 3) === "aug") {
 		offsets.push(0, 4, 8);
 
-		if(s.indexOf("7") !== -1) {
-			if(s.indexOf("maj7") !== -1 || s.indexOf("Maj7") !== -1) {
-				offsets.push(11);
-			} else {
-				offsets.push(10);
-			}
+		if(s.indexOf("maj7") !== -1 || s.indexOf("Maj7") !== -1) {
+			offsets.push(11);
+		} else if(s.indexOf("7") !== -1) {
+			offsets.push(10);
 		}
 	}
 	
