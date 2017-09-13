@@ -48,7 +48,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 88.5, 474.0, 50.0, 20.0 ],
-					"presentation_rect" : [ 81.0, 417.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "PC Set"
 				}
@@ -64,7 +63,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.0, 474.0, 44.0, 20.0 ],
-					"presentation_rect" : [ 303.0, 463.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Chord"
 				}
@@ -81,10 +79,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 331.0, 400.0, 228.0, 34.0 ],
-					"presentation_rect" : [ 329.0, 365.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "(Press 'c' to advance chord, any other key to advance melody)",
-					"textjustification" : 0
+					"text" : "(Press 'c' to advance chord, any other key to advance melody)"
 				}
 
 			}
@@ -385,7 +381,6 @@
 					}
 ,
 					"patching_rect" : [ 361.0, 181.5, 50.0, 22.0 ],
-					"presentation_rect" : [ 443.5, 205.5, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -407,7 +402,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 361.0, 130.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 443.5, 154.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
