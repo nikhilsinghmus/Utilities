@@ -63,8 +63,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.5, 275.0, 271.0, 66.0 ],
 					"style" : "",
-					"text" : "A simple queue implementation for lists. Usage is just like zl.queue, optional first argument specifies max length of queue (default 8192).",
-					"textjustification" : 0
+					"text" : "A simple queue implementation for lists. Usage is just like zl.queue, optional first argument specifies max length of queue (default 8192)."
 				}
 
 			}
