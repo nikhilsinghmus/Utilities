@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 
 		// If we cannot open the input file, skip to next iteration.
 		if(fp == NULL) {
-			printf("Error opening %s\n", argv[i]);
+			fprintf(stderr, "Error opening %s\n", argv[i]);
 			fclose(fp);
 			continue;
 		}
